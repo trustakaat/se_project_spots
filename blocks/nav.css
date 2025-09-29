@@ -1,0 +1,14 @@
+.nav {
+  max-width: auto;
+  display: flex;
+  justify-content: center;
+  max-height: 46px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.nav__logo {
+  width: 94px;
+  height: 26px;
+}
