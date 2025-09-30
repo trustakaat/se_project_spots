@@ -1,21 +1,93 @@
-# Project 3: Spots
+# 📸 **Spots Photo Sharing App**
 
-### Overview  
+## 📝 **Description**
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+Spots is a simple photo-sharing web application where users can upload photos, like them, and edit their profile. The current version focuses on layout and styling using **HTML and CSS**, with full **BEM methodology** applied (including a modular file structure).
+
+Future improvements include adding **JavaScript functionality** for interactivity (likes, uploads, edits) and possibly implementing a **comments section** for photos.
+
+---
+
+## ⚙️ **Functionality**
+
+- User profile section with editable details
+- Photo card layout for displaying uploaded photos
+- Like button UI present
+- Responsive design following the BEM methodology
+
+---
+
+## 🛠️ **Technologies & Techniques Used**
+
+- **Frontend:** HTML5, CSS3
+- **Methodology:** Block-Element-Modifier (BEM) with strict file structure
+- **Styling Tools:** normalize.css, custom fonts (vendor)
+- **Design Approach:** Responsive layout, modular CSS architecture
+
+---
+
+## 📂 **Project Structure**
+
+```
+project-root/
+│── index.html              # Main HTML file
+│── /blocks                 # CSS files per block (BEM structure)
+│   ├── page.css
+│   ├── header.css
+│   ├── nav.css
+│   ├── content.css
+│   ├── profile.css
+│   ├── cards.css
+│   ├── card.css
+│   ├── footer.css
+│── /images                 # Images and assets
+│── /vendor                 # Vendor/fonts/normalize CSS
+│   │── fonts
+│   │   ├── fonts.css
+│   ├── normalize.css
+│── /pages                  # Page-specific CSS (e.g., index.css)
+│── README.md               # Project documentation
+```
+
+---
+
+## 📸 **Screenshots**
+
+### 🖥️ **Desktop View**
+
+<a href="./images/desktop_ss.png" target="_blank">
+  <img src="./images/desktop_ss.png" alt="Mobile Screenshot" width="400" />
+</a>
+
+---
+
+### 📱 **Mobile View**
+
+<a href="./images/mobile__ss.png" target="_blank">
+  <img src="./images/mobile__ss.png" alt="Mobile Screenshot" width="175" height="400" />
+</a>
+
+---
+
+---
+
+## 🚀 **Live Demo (GitHub Pages)**
+
+`https://trustakaat.github.io/se_project_spots/`
+
+---
+
+## 🔮 **Future Improvements**
+
+- Implement JavaScript for liking photos, uploading, and profile editing.
+- Add a comments section per photo.
+
+---
+
+## 👤 **Author**
+
+**James Clark**
+
+- GitHub: [@trustakaat](https://github.com/trustakaat)
+
+---
