@@ -77,6 +77,13 @@ project-root/
 
 ---
 
+## 🎬 **Project Pitch Video**
+
+Check out [this video](https://drive.google.com/file/d/1JvR6snZdESYbGUp41uAQTGSeGeMste60/view?usp=sharing), where I describe my
+project and some challenges I faced while building it.
+
+---
+
 ## 🔮 **Future Improvements**
 
 - Implement JavaScript for liking photos, uploading, and profile editing.
