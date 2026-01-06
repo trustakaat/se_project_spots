@@ -51,7 +51,7 @@
   line-height: 100%;
 }
 
-.model__form {
+.modal__form {
   display: flex;
   flex-direction: column;
 }
