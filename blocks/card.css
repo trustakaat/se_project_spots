@@ -23,7 +23,6 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1.4;
-  font-style: medium;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -55,9 +54,5 @@
   .card__image {
     height: 288px;
     width: 288px;
-  }
-  .cards__list {
-    grid-template-columns: repeat(auto-fit, 288px);
-    gap: 40px 20px;
   }
 }

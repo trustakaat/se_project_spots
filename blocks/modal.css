@@ -21,6 +21,7 @@
 }
 
 .modal__container {
+  box-sizing: border-box;
   position: relative;
   max-width: 730px;
   width: 100%;
@@ -91,6 +92,7 @@
   padding: 18px 32px;
   color: white;
   background: #212121;
+  cursor: pointer;
 }
 
 .modal__save-btn:hover {

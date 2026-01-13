@@ -24,39 +24,48 @@ const newPostCaptionInput = newPostModal.querySelector(
 
 // Functions
 
+function openModal(o) {
+  o.classList.add("modal_is-opened");
+}
+
+function closeModal(c) {
+  c.classList.remove("modal_is-opened");
+}
+
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
   profileUserName.textContent = modalInputName.value;
   profileUserInfo.textContent = modalInputInfo.value;
-  editProfileModal.classList.toggle("modal_is-opened");
+  closeModal(editProfileModal);
 }
 
 function handleNewPostFormSubmit(evt) {
   evt.preventDefault();
   console.log(postImageInput.value);
   console.log(newPostCaptionInput.value);
-  newPostModal.classList.toggle("modal_is-opened");
+  closeModal(newPostModal);
 }
 
 // listeners
 
 editProfileBtn.addEventListener("click", function () {
-  editProfileModal.classList.toggle("modal_is-opened");
   modalInputName.value = profileUserName.textContent;
   modalInputInfo.value = profileUserInfo.textContent;
+  openModal(editProfileModal);
 });
 
 editProfileCloseBtn.addEventListener("click", function () {
-  editProfileModal.classList.toggle("modal_is-opened");
+  closeModal(editProfileModal);
 });
 
 newPostBtn.addEventListener("click", function () {
-  newPostModal.classList.toggle("modal_is-opened");
+  openModal(newPostModal);
 });
 
 newPostCloseBtn.addEventListener("click", function () {
-  newPostModal.classList.toggle("modal_is-opened");
+  closeModal(newPostModal);
 });
 
 modalForm.addEventListener("submit", handleProfileFormSubmit);
+
 modalPostForm.addEventListener("submit", handleNewPostFormSubmit);

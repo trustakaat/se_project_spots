@@ -15,7 +15,6 @@
   border-radius: 8px;
   display: flex;
   height: 190px;
-  width: 505px;
   margin: 0;
 }
 
@@ -45,7 +44,7 @@
   flex-direction: column;
   margin-right: auto;
   margin-left: 20px;
-  height: 190px;
+  height: auto;
   max-width: 420px;
 }
 
@@ -123,7 +122,6 @@
   .profile__edit-btn {
     height: auto;
     width: auto;
-    justify-content: none;
     margin: 32px auto 0 auto;
   }
 
