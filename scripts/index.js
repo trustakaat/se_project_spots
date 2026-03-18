@@ -72,7 +72,7 @@ function getCardElement(data) {
   likeBtn.addEventListener("click", () => {
     likeBtn.classList.toggle("card__btn_liked");
   });
-  const deleteBtn = cardElement.querySelector(".card__delete_btn");
+  const deleteBtn = cardElement.querySelector(".card__delete-btn");
   deleteBtn.addEventListener("click", () => {
     cardElement.remove();
     cardElement = null;
