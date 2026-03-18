@@ -6,10 +6,16 @@
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 60px;
+  padding: 0 20px 60px 20px;
 }
 
 .footer__copyright {
   color: #212121;
   margin: 0;
+}
+
+@media screen and (max-width: 627px) {
+  .footer {
+    padding: 0 16px;
+  }
 }

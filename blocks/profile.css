@@ -52,13 +52,11 @@
 .profile__user-name {
   font-size: 32px;
   margin: 0;
-  font-style: medium;
   max-width: 420px;
   white-space: normal;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
@@ -67,13 +65,11 @@
   margin: 0;
   margin-top: 12px;
   opacity: 0.7;
-  font-style: medium;
   max-width: 420px;
   white-space: normal;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }

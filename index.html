@@ -22,7 +22,7 @@
       <section class="profile">
         <img
           src="./images/avatar.jpg"
-          alt="profile Avatar"
+          alt="Bessie Coleman"
           class="profile__image"
         />
         <div class="profile__text">
@@ -75,6 +75,8 @@
               type="text"
               class="modal__input"
               placeholder="Type your name"
+              required
+              aria-required="true"
             />
           </label>
           <label for="profile-description-input" class="modal__label">
@@ -84,6 +86,8 @@
               type="text"
               class="modal__input"
               placeholder="Describe yourself"
+              required
+              aria-required="true"
             />
           </label>
           <button type="submit" class="modal__save-btn">Save</button>
@@ -100,9 +104,11 @@
             Image link
             <input
               id="post-image-input"
-              type="text"
+              type="url"
               class="modal__input"
               placeholder="Paste a link to the picture"
+              required
+              aria-required="true"
             />
           </label>
           <label for="new-post-caption-input" class="modal__label">
@@ -112,6 +118,8 @@
               type="text"
               class="modal__input"
               placeholder="Type your caption"
+              required
+              aria-required="true"
             />
           </label>
           <button type="submit" class="modal__save-btn">Save</button>
@@ -123,7 +131,7 @@
       <div class="modal__image-container">
         <button
           type="button"
-          class="modal__close-btn modal__close_btn-preview"
+          class="modal__close-btn modal__close_btn-type-preview"
         ></button>
         <img src="#" alt="" class="modal__image" />
         <p class="modal__caption"></p>

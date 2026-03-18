@@ -54,7 +54,6 @@
 .modal__title {
   margin-top: 0;
   font-weight: 500;
-  font-style: Medium;
   font-size: 32px;
   line-height: 100%;
 }
@@ -66,7 +65,6 @@
 
 .modal__label {
   font-weight: 500;
-  font-style: Medium;
   font-size: 16px;
   line-height: 110%;
   color: #212121b2;
@@ -91,7 +89,6 @@
   max-height: 52px;
   opacity: 1;
   border-radius: 8px;
-  gap: 8px;
   padding: 18px 32px;
   color: white;
   background: #212121;
@@ -114,7 +111,6 @@
   position: relative;
   max-width: 80vw;
   border-radius: 8px;
-  background-color: none;
   margin: auto;
 }
 
@@ -127,7 +123,7 @@
   margin: auto;
 }
 
-.modal__close_btn-preview {
+.modal__close_btn-type-preview {
   background-image: url("../images/preview_close_btn.svg");
   height: 40px;
   width: 40px;
@@ -136,7 +132,7 @@
   right: -52.5px;
 }
 
-.modal__close_btn-preview:hover {
+.modal__close_btn-type-preview:hover {
   background-image: url("../images/preview-close-btn-hov.svg");
 }
 

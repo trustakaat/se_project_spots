@@ -51,7 +51,9 @@ const newPostCaptionInput = newPostModal.querySelector(
 );
 
 const previewModal = document.querySelector("#preview-modal");
-const previewCloseBtn = previewModal.querySelector(".modal__close_btn-preview");
+const previewCloseBtn = previewModal.querySelector(
+  ".modal__close_btn-type-preview",
+);
 const previewCaption = previewModal.querySelector(".modal__caption");
 const previewImage = previewModal.querySelector(".modal__image");
 
@@ -75,7 +77,6 @@ function getCardElement(data) {
   const deleteBtn = cardElement.querySelector(".card__delete-btn");
   deleteBtn.addEventListener("click", () => {
     cardElement.remove();
-    cardElement = null;
   });
 
   cardImage.addEventListener("click", () => {

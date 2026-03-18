@@ -3,7 +3,7 @@
   position: relative;
 }
 
-.card__delete_btn {
+.card__delete-btn {
   background: transparent;
   border: none;
   background-image: url(../images/delete__button.svg);
@@ -20,7 +20,7 @@
   right: 10px;
 }
 
-.card__delete_btn:hover {
+.card__delete-btn:hover {
   background-image: url(../images/delete__button_Hover.svg);
 }
 
@@ -31,6 +31,7 @@
   margin: 0;
   object-fit: cover;
   display: block;
+  cursor: pointer;
 }
 
 .card__description {
