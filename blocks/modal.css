@@ -1,6 +1,8 @@
 .modal {
   visibility: hidden;
-  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  transition:
+    visibility 0s linear 0.5s,
+    opacity 0.5s linear;
   opacity: 0;
   background-color: #00000080;
   position: fixed;
@@ -105,6 +107,49 @@
   color: #2121214d;
 }
 
+/* image preview model */
+
+.modal__image-container {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 80vw;
+  border-radius: 8px;
+  background-color: none;
+  margin: auto;
+}
+
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.modal__close_btn-preview {
+  background-image: url("../images/preview_close_btn.svg");
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: -52.5px;
+}
+
+.modal__close_btn-preview:hover {
+  background-image: url("../images/preview-close-btn-hov.svg");
+}
+
+.modal__caption {
+  font-size: 20px;
+  color: white;
+  margin: 8px 0;
+  background-color: #212121;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 2px 8px 2px 8px;
+}
+
 @media screen and (max-width: 627px) {
   .modal__save-btn {
     max-width: none;
@@ -127,5 +172,15 @@
   }
   .modal__label {
     margin: 0 0 24px;
+  }
+
+  .modal__caption {
+    font-size: 16px;
+  }
+
+  .modal__close_btn-preview {
+    position: absolute;
+    top: -48px;
+    right: 0;
   }
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -44,79 +44,18 @@
       </section>
       <section class="cards">
         <ul class="cards__list">
-          <!-- start card 1 -->
-          <li class="card">
-            <img
-              src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-              alt="Val Thorenz"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__text">Val thorenz</h2>
-              <button class="card__btn"></button>
-            </div>
-          </li>
-          <!-- start card 2 -->
-          <li class="card">
-            <img
-              src="./images/2-photo-by-ceiline-from-pexels.jpg"
-              alt="Val Thorenz"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__text">Restaurant terrace</h2>
-              <button class="card__btn"></button>
-            </div>
-          </li>
-          <!-- start card 3 -->
-          <li class="card">
-            <img
-              src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-              alt="Val Thorenz"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__text">An outdoor cafe</h2>
-              <button class="card__btn"></button>
-            </div>
-          </li>
-          <!-- start card 4 -->
-          <li class="card">
-            <img
-              src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
-              alt="Val Thorenz"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__text">A very long bridge, over the forest...</h2>
-              <button class="card__btn"></button>
-            </div>
-          </li>
-          <!-- start card 5 -->
-          <li class="card">
-            <img
-              src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-              alt="Val Thorenz"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__text">Tunnel with morning light</h2>
-              <button class="card__btn"></button>
-            </div>
-          </li>
-          <!-- start card 6 -->
-          <li class="card">
-            <img
-              src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-              alt="Val Thorenz"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__text">Mountain house</h2>
-              <button class="card__btn"></button>
-            </div>
-          </li>
-          <!-- end all cards here -->
+          <!-- start template -->
+          <template id="card__template">
+            <li class="card">
+              <button class="card__delete_btn" type="button"></button>
+              <img src="" alt="" class="card__image" />
+              <div class="card__description">
+                <h2 class="card__text"></h2>
+                <button class="card__btn"></button>
+              </div>
+            </li>
+          </template>
+          <!-- end Template here -->
         </ul>
       </section>
     </main>
@@ -177,6 +116,17 @@
           </label>
           <button type="submit" class="modal__save-btn">Save</button>
         </form>
+      </div>
+    </div>
+    <!-- start post image modal  -->
+    <div class="modal" id="preview-modal">
+      <div class="modal__image-container">
+        <button
+          type="button"
+          class="modal__close-btn modal__close_btn-preview"
+        ></button>
+        <img src="#" alt="" class="modal__image" />
+        <p class="modal__caption"></p>
       </div>
     </div>
     <script src="./scripts/index.js"></script>
