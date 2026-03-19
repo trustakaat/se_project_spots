@@ -37,7 +37,7 @@
 .card__description {
   display: flex;
   justify-content: space-between;
-  margin: 8px 0 16px 0;
+  margin: 12px 0 0;
 }
 
 .card__text {
@@ -80,6 +80,10 @@
 }
 
 @media screen and (max-width: 627px) {
+  .card__text {
+    font-size: 16px;
+  }
+
   .card {
     width: 288px;
   }

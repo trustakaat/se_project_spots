@@ -52,7 +52,7 @@ const newPostCaptionInput = newPostModal.querySelector(
 
 const previewModal = document.querySelector("#preview-modal");
 const previewCloseBtn = previewModal.querySelector(
-  ".modal__close_btn-type-preview",
+  ".modal__close-btn_type_preview",
 );
 const previewCaption = previewModal.querySelector(".modal__caption");
 const previewImage = previewModal.querySelector(".modal__image");

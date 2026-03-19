@@ -123,7 +123,7 @@
   margin: auto;
 }
 
-.modal__close_btn-type-preview {
+.modal__close-btn_type_preview {
   background-image: url("../images/preview_close_btn.svg");
   height: 40px;
   width: 40px;
@@ -132,7 +132,7 @@
   right: -52.5px;
 }
 
-.modal__close_btn-type-preview:hover {
+.modal__close-btn_type_preview:hover {
   background-image: url("../images/preview-close-btn-hov.svg");
 }
 
