@@ -84,6 +84,17 @@
   font-size: 16px;
 }
 
+.modal__input_type_error {
+  border: 1px solid #ff000099;
+}
+
+.modal__error {
+  color: #ff0000b2;
+  font-size: 16px;
+  display: block;
+  margin-top: 8px;
+}
+
 .modal__save-btn {
   max-width: 156px;
   max-height: 52px;
@@ -96,12 +107,25 @@
   border: none;
 }
 
+.modal__save-btn_inactive {
+  color: white;
+  background: #212121;
+  cursor: default;
+  opacity: 50%;
+}
+
+/* add modal input hover styles */
+
 .modal__save-btn:hover {
   background-color: #212121cc;
 }
 
 .modal__input::placeholder {
   color: #2121214d;
+}
+
+.modal__save-btn_inactive:hover {
+  background: #212121;
 }
 
 /* image preview model */

@@ -49,6 +49,7 @@ const postImageInput = newPostModal.querySelector("#post-image-input");
 const newPostCaptionInput = newPostModal.querySelector(
   "#new-post-caption-input",
 );
+const modalButton = newPostModal.querySelector(".modal__save-btn");
 
 const previewModal = document.querySelector("#preview-modal");
 const previewCloseBtn = previewModal.querySelector(
@@ -112,14 +113,18 @@ function handleProfileFormSubmit(evt) {
 
 function handleNewPostFormSubmit(evt) {
   evt.preventDefault();
+
   const newPostValues = {
     name: newPostCaptionInput.value,
     link: postImageInput.value,
   };
+
   const cardEl = getCardElement(newPostValues);
   cardsList.prepend(cardEl);
-  closeModal(newPostModal);
+
   modalPostForm.reset();
+  resetValidation(modalPostForm, settings);
+  closeModal(newPostModal);
 }
 
 // listeners
