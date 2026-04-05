@@ -108,10 +108,8 @@
 }
 
 .modal__save-btn_inactive {
-  color: white;
-  background: #212121;
   cursor: default;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 /* add modal input hover styles */
@@ -198,7 +196,7 @@
     font-size: 16px;
   }
 
-  .modal__close_btn-preview {
+  .modal__close-btn_type_preview {
     position: absolute;
     top: -48px;
     right: 0;

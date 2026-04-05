@@ -1,3 +1,5 @@
+console.log("index.js loaded");
+
 // Cards
 const initialCards = [
   {
@@ -60,7 +62,7 @@ const previewImage = previewModal.querySelector(".modal__image");
 
 const cardTemplate = document.querySelector("#card__template");
 
-//card template
+// Card template
 
 function getCardElement(data) {
   const cardElement = cardTemplate.content
@@ -90,18 +92,29 @@ function getCardElement(data) {
   return cardElement;
 }
 
-//cardslist
+// Cards list
 
 const cardsList = document.querySelector(".cards__list");
 
 // Functions
 
+function handleEscapeKey(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_is-opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+}
+
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  document.addEventListener("keydown", handleEscapeKey);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keydown", handleEscapeKey);
 }
 
 function handleProfileFormSubmit(evt) {
@@ -127,7 +140,7 @@ function handleNewPostFormSubmit(evt) {
   closeModal(newPostModal);
 }
 
-// listeners
+// Listeners
 
 editProfileBtn.addEventListener("click", function () {
   modalInputName.value = profileUserName.textContent;
@@ -154,6 +167,17 @@ previewCloseBtn.addEventListener("click", () => {
 modalForm.addEventListener("submit", handleProfileFormSubmit);
 
 modalPostForm.addEventListener("submit", handleNewPostFormSubmit);
+
+// Close modal by clicking the overlay
+
+const modals = document.querySelectorAll(".modal");
+modals.forEach((modal) => {
+  modal.addEventListener("click", (evt) => {
+    if (evt.target.classList.contains("modal")) {
+      closeModal(modal);
+    }
+  });
+});
 
 initialCards.forEach(function (item) {
   const cardEl = getCardElement(item);
