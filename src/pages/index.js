@@ -48,7 +48,6 @@ const postImageInput = newPostModal.querySelector("#post-image-input");
 const newPostCaptionInput = newPostModal.querySelector(
   "#new-post-caption-input",
 );
-const modalButton = newPostModal.querySelector(".modal__save-btn");
 
 // preview image modal
 
@@ -220,7 +219,7 @@ function handleAvatarFormSubmit(evt) {
     .then((user) => {
       profileAvatar.src = user.avatar;
       avatarForm.reset();
-      resetValidation();
+      resetValidation(avatarForm, settings);
       closeModal(avatarModal);
     })
     .catch(console.error)
