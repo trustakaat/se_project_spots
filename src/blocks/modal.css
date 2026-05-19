@@ -51,11 +51,25 @@
   background-image: url("../images/close_btn_hover.svg");
 }
 
+.modal__close-btn_type_delete {
+  background-image: url("../images/preview_close_btn.svg");
+}
+
+.modal__close-btn_type_delete:hover {
+  background-image: url("../images/preview-close-btn-hov.svg");
+}
+
+.modal__container_type_delete .modal__close-btn {
+  top: 0;
+  right: -52px;
+}
+
 .modal__title {
   margin-top: 0;
   font-weight: 500;
   font-size: 32px;
   line-height: 100%;
+  text-align: center;
 }
 
 .modal__form {
@@ -84,6 +98,10 @@
   font-size: 16px;
 }
 
+.modal__container_type_avatar .modal__save-btn {
+  margin-top: 32px;
+}
+
 .modal__input_type_error {
   border: 1px solid #ff000099;
 }
@@ -107,12 +125,50 @@
   border: none;
 }
 
+.modal__cancel-btn {
+  max-width: 156px;
+  max-height: 52px;
+  opacity: 1;
+  border-radius: 8px;
+  padding: 18px 32px;
+  color: #212121;
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid #212121;
+}
+
+.modal__cancel-btn:hover {
+  opacity: 0.7;
+}
+
+.modal__container_type_delete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 40px 50px;
+}
+
+.modal__btn-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.modal__save-btn_type_delete {
+  background-color: #e03f3f;
+  max-width: 156px;
+}
+
+.modal__save-btn_type_delete:hover {
+  background-color: #c0392b;
+}
+
 .modal__save-btn_inactive {
   cursor: default;
   opacity: 0.5;
 }
-
-/* add modal input hover styles */
 
 .modal__save-btn:hover {
   background-color: #212121cc;
@@ -125,8 +181,6 @@
 .modal__save-btn_inactive:hover {
   background: #212121;
 }
-
-/* image preview model */
 
 .modal__image-container {
   box-sizing: border-box;
@@ -174,6 +228,11 @@
     width: 100%;
   }
 
+  .modal__cancel-btn {
+    max-width: none;
+    width: 100%;
+  }
+
   .modal__title {
     font-size: 20px;
     margin: 10px 0 32px 0;
@@ -188,6 +247,7 @@
     top: 12px;
     right: 12px;
   }
+
   .modal__label {
     margin: 0 0 24px;
   }
@@ -200,5 +260,10 @@
     position: absolute;
     top: -48px;
     right: 0;
+  }
+
+  .modal__btn-row {
+    flex-direction: column;
+    width: 100%;
   }
 }
