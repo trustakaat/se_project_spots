@@ -98,10 +98,6 @@
   font-size: 16px;
 }
 
-.modal__container_type_avatar .modal__save-btn {
-  margin-top: 32px;
-}
-
 .modal__input_type_error {
   border: 1px solid #ff000099;
 }

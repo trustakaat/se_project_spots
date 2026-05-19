@@ -1,45 +1,11 @@
 // imports
 import Api from "../utils/Api.js";
-// import valThorens from "../images/1-photo-by-moritz-feldmann-from-pexels.jpg";
-// import restaurantTerrace from "../images/2-photo-by-ceiline-from-pexels.jpg";
-// import anOutdoorCafe from "../images/3-photo-by-tubanur-dogan-from-pexels.jpg";
-// import longBridge from "../images/4-photo-by-maurice-laschet-from-pexels.jpg";
-// import tunnelLight from "../images/5-photo-by-van-anh-nguyen-from-pexels.jpg";
-// import mountainHouse from "../images/6-photo-by-moritz-feldmann-from-pexels.jpg";
 import "./index.css";
 import {
   enableValidation,
   resetValidation,
   settings,
 } from "../scripts/validation.js";
-
-//Cards
-// const initialCards = [
-//   {
-//     name: "Val Thorens",
-//     link: valThorens,
-//   },
-//   {
-//     name: "Restaurant terrace",
-//     link: restaurantTerrace,
-//   },
-//   {
-//     name: "An outdoor cafe",
-//     link: anOutdoorCafe,
-//   },
-//   {
-//     name: "A very long bridge, over the forest and through the trees",
-//     link: longBridge,
-//   },
-//   {
-//     name: "Tunnel with morning light",
-//     link: tunnelLight,
-//   },
-//   {
-//     name: "Mountain house",
-//     link: mountainHouse,
-//   },
-// ];
 
 // Selections
 
@@ -254,6 +220,7 @@ function handleAvatarFormSubmit(evt) {
     .then((user) => {
       profileAvatar.src = user.avatar;
       avatarForm.reset();
+      resetValidation();
       closeModal(avatarModal);
     })
     .catch(console.error)

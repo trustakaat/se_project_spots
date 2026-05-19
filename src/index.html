@@ -195,15 +195,20 @@
       <div class="modal__container modal__container_type_avatar">
         <button class="modal__close-btn" type="button"></button>
         <h2 class="modal__title">Update Profile Picture</h2>
-        <form name="avatarForm">
-          <input
-            class="modal__input"
-            id="avatar-input"
-            type="url"
-            name="avatar"
-            placeholder="Image URL"
-            required
-          />
+        <form class="modal__form" name="avatarForm" novalidate>
+          <label for="avatar-input" class="modal__label">
+            Image URL
+            <input
+              class="modal__input"
+              id="avatar-input"
+              type="url"
+              name="avatar"
+              placeholder="Image URL"
+              required
+              aria-required="true"
+            />
+            <span id="avatar-input-error" class="modal__error"></span>
+          </label>
           <button class="modal__save-btn" type="submit">Save</button>
         </form>
       </div>
